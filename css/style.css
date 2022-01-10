@@ -1840,4 +1840,32 @@ form label {
   opacity: 0;
 }
 
+.scroll-down {
+  position: absolute;
+  bottom: 4px;
+  left: 45%;
+  -webkit-animation: icon-chevron-down 2s ease-in-out infinite;
+  -moz-animation:    icon-chevron-down 2s ease-in-out infinite;
+  animation:         icon-chevron-down 2s ease-in-out infinite;
+}
+
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes icon-chevron-down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes icon-chevron-down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes icon-chevron-down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+
 /*# sourceMappingURL=style.css.map */
