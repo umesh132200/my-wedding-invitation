@@ -67,7 +67,7 @@
 
 	<div id="page">
 		<audio autoplay loop id="audioFile">
-			<source src="audio/humnava.mp3" type="audio/mpeg">
+			<source src="audio/audio.mp3" type="audio/mpeg">
 		</audio>
 
 		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_7.jpg);"
@@ -85,7 +85,8 @@
 								<a class='musicOff' href="#!"><img src="images/stop-audio.png" width="48" height="48"
 										id="myImg"></a>
 								<!-- <div class="text-center scroll-down"> -->
-									<span class="scroll-down"><i class="icon-chevron-down" style="font-size: 40px;"></i></span>
+								<span class="scroll-down"><i class="icon-chevron-down"
+										style="font-size: 40px;"></i></span>
 								<!-- </div> -->
 							</div>
 						</div>
@@ -352,6 +353,13 @@
 					x.pause();
 				}
 			});
+		});
+		$(window).load(function () {
+			// executes when complete page is fully loaded, including all frames, objects and images
+			console.log("window is loaded");
+			var x = document.getElementById("audioFile");
+			x.muted = true;
+			x.play();
 		});
 	</script>
 
